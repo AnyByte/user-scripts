@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name           Telegraph-Reader
+@namespace      https://github.com/NyaBit/telegraph-reader
+@version        0.0.1
+@description    An userstyle for Telegra.ph articles.
+@author         NyaBit/MaxAvatar
+@preprocessor uso
+==/UserStyle== */
+@-moz-document domain("telegra.ph") {
+/*[[theme]]*/
+	* {
+	    color: white;
+	}
+
+	body {
+	    background-color: black;
+	    margin: 0 30% 0 30%;
+	}
+
+	.tl_page_wrap, img {
+	    height: auto;
+	    width: 100%;
+	    margin: 0;
+	    max-width: unset;
+	}
+
+	.tl_article .tl_article_content .figure_wrapper img, .tl_article .tl_article_content .figure_wrapper video {
+	    max-height: unset;
+	}
+
+	figure {
+	    transition: all .2s ease-in-out !important;
+	    height: 100%;
+	    display: grid;
+	}
+
+	figure:hover {
+	    transform: scale(2);
+	    z-index:1;
+	}
+}
